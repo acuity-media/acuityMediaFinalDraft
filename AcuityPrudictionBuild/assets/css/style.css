@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'DM Sans', serif;
+    color: #000;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+.dropdown,
+.dropdown2 {
+    display: none;
+}
+
+.overLay {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1.4px);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.activeNav {
+    color: #f63;
+}
+
+/* ===========NavBar Starts Here=========== */
+.topNavBar {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    width: 100vw;
+    font-family: Helvetica, serif;
+    z-index: 50;
+    position: fixed;
+    height: 10vh;
+    transition: all 0.5s;
+
+}
+
+#changeText {
+    color: #f63;
+}
+
+.circle {
+    background-color: #f63;
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+    transition: all 0.5s;
+
+}
+
+.logo:hover>.circle {
+    border-radius: 0%;
+    transform: rotate(135deg);
+    transition: all 0.5s;
+    background-color: #808080;
+    border-radius: 10%;
+}
+
+.logo {
+    font-family: 'DM Sans', serif;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 2rem;
+    transition: all 0.5s;
+
+}
+
+
+.navItemsContainer ul,
+.navButton {
+    display: flex;
+}
+
+.navItemsContainer ul li {
+    list-style-type: none;
+    padding: .4rem 1.2rem;
+}
+
+.myButtons {
+    padding: .4rem .5rem;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #808080;
+    font-weight: 100;
+    transition: 0.2s;
+
+
+}
+
+.btn-bg a {
+    padding: 0.5rem 1rem;
+    border-radius: .3rem;
+    text-transform: capitalize;
+    background-color: #f63;
+    color: #fff;
+    border: 2px solid #f63;
+    transition: 0.2s;
+    font-weight: 500;
+
+}
+
+.buttonLong {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    background-color: #f63;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    width: 100%;
+
+}
+
+a:hover {
+    color: #f63;
+    transition: 0.2s;
+}
+
+.btn-bg a:hover {
+    background-color: #808080;
+    color: #fff;
+    border: 2px solid #808080;
+    transition: 0.2s;
+
+}
+
+ul li a {
+    transition: .2s;
+}
+
+ul li a:hover {
+    transition: .3s;
+}
+
+
+
+/* ===========NavBar Ends Here=========== */
+
+
+
+
+
+/* ===========Hero Section Starts Here=========== */
+.heroSection {
+    background-image: url(../images/heroSectionBG.png);
+    height: auto;
+    padding-bottom: 2rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #000;
+    padding-top: 15vh;
+    text-align: center;
+}
+
+.heroHeading {
+    font-size: 2rem;
+    font-size: 9rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 21px;
+    text-align: center;
+
+}
+
+.heroBtn {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 1.2rem 5rem;
+}
+
+.hb1 {
+    margin-right: 1rem;
+    color: #000;
+    background-color: #ecececb5;
+    border: 2px solid #000;
+    border-radius: 2rem;
+}
+
+.hb1:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.hb2 {
+    background-color: #000;
+    margin-right: 1rem;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 2rem;
+}
+
+.hb2:hover {
+    background-color: #ecececb5;
+    color: #000;
+}
+
+.heroButtons {
+    height: 5vh;
+    margin-top: 2vh;
+    display: flex;
+    margin-left: auto;
+}
+
+#herobutton1 {
+    margin-left: auto;
+}
+
+#herobutton2 {
+    margin-right: auto;
+}
+
+.heroInfo h2 {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    font-weight: 100;
+    color: #000;
+    margin-bottom: 5vh;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.heroInfo span {
+    cursor: pointer;
+    color: #f63;
+}
+
+/* ===========Hero Section Ends Here=========== */
+
+
+/* ===========About Section Starts Here=========== */
+
+.aboutSection {
+    background-color: #ececec;
+    height: 100vh;
+}
+
+.aboutSection>#head {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: inline-block;
+    color: #58595b;
+    margin-left: 2.8rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2.4rem;
+    text-transform: uppercase;
+}
+
+.aboutSectionCont {
+    display: flex;
+}
+
+.contItems {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutLeft>h1 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: inline-block;
+    color: #000;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin-top: -2vh;
+}
+
+.aboutMargin {
+    width: 2px;
+    background-color: #a5a5a5;
+    height: 80vh;
+}
+
+.aboutRight>p {
+    margin: 2rem 0;
+    font-size: 1.3rem;
+}
+
+.aboutRight>p:nth-child(1) {
+    margin-top: 2rem;
+}
+
+.aboutLeftItems {
+    display: flex;
+}
+
+.aboutLeftItems p {
+    width: 90%;
+}
+
+.abLeftImages {
+    height: 6rem;
+    padding: 1rem;
+}
+
+.aboutSectionBtn {
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 2.2rem;
+    border-radius: .7rem;
+    margin-top: 1rem;
+    display: block;
+    width: 12rem;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: large;
+}
+
+.aboutSectionBtn:hover {
+    background-color: grey;
+    color: #fff;
+}
+
+/* ===========About Section Ends Here=========== */
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 95vw;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    height: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    border-radius: 1rem;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #f63;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f63f63;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f63;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #f63;
+    color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.workContainer h1 {
+    text-align: center;
+    font-family: Helvetica, serif;
+    font-size: 3rem;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-transform: uppercase;
+}
+
+/* ======================================= */
+
+
+/* ======= Service Section Styling========= */
+
+/*===================  Section1 Ends=================== */
+
+
+/*===================  Section1 Starts=================== */
+
+.section1Container {
+    color: #000;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+.heading {
+    color: #000;
+    text-transform: uppercase;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    padding-top: 1rem;
+    margin-top: 3rem;
+}
+
+.section1Heading {
+    display: flex;
+    margin-top: 6vh;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Open Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    color: #f63;
+}
+
+.icons {
+    height: 3rem;
+    margin-right: 2vw;
+}
+
+.section1Content {
+    margin-top: 1vh;
+}
+
+.section1Content h2 {
+    width: 50vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+
+
+
+
+/* ======= Service Section Styling========= */
+
+/*===================  Section2 Starts=================== */
+
+.section2Container {
+    height: auto;
+    padding-bottom: 4vh;
+    display: flex;
+    align-items: center;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section2Left {
+    width: 50vw;
+}
+
+.section2Left img {
+    width: 50vw;
+    border-radius: 1rem;
+}
+
+.section2Right {
+    width: 50vw;
+    height: 80%;
+    margin-left: 2vw;
+    padding-top: 5vh;
+}
+
+.section2Right span {
+    margin-left: 5vw;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #58595b;
+}
+
+.section2Right h2 {
+    margin-top: 1rem;
+    margin-left: 5vw;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #f63;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+}
+
+.items img {
+    height: 5rem;
+    margin-left: 5vw;
+}
+
+.items h5 {
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+}
+
+.itemContent {
+    font-size: 1.3rem;
+    margin: 1.8rem 0 1.8rem 6vw;
+    font-weight: 100;
+}
+
+/*===================  Section2 Ends=================== */
+
+
+
+footer {
+    background-color: #58595b;
+    text-align: center;
+    color: #f63;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+.activeBar {
+    background-color: #000;
+    transition: all 0.5s;
+}
+
+.logoActive {
+    color: #fff;
+}
